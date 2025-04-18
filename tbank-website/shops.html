@@ -3,52 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>T-Bank Style Header</title>
+    <title>T-Bank - New Shop</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Welcome Modal -->
-    <div id="welcomeModal" class="modal welcome-modal">
-        <div class="modal-content welcome-content">
-            <div class="welcome-left">
-                <h2>All features free<br>for 3 days</h2>
-                <div class="welcome-image">
-                    <img src="https://placehold.co/400x300" alt="Laptop with cursor" class="laptop-image">
-                </div>
-            </div>
-            <div class="welcome-right">
-                <h3>We recommend starting here<br>to make sure you get everything done</h3>
-                <div class="steps-list numbered">
-                    <div class="step-item">
-                        <span class="step-number">1</span>
-                        <div class="step-text">
-                            <h4>Add store</h4>
-                        </div>
-                    </div>
-                    <div class="step-item">
-                        <span class="step-number">2</span>
-                        <div class="step-text">
-                            <h4>Add competitor's product</h4>
-                        </div>
-                    </div>
-                    <div class="step-item">
-                        <span class="step-number">3</span>
-                        <div class="step-text">
-                            <h4>Set up auto-replies to reviews</h4>
-                        </div>
-                    </div>
-                    <div class="step-item">
-                        <span class="step-number">4</span>
-                        <div class="step-text">
-                            <h4>Learn unit economics</h4>
-                        </div>
-                    </div>
-                </div>
-                <a href="#" class="yellow-btn" onclick="closeWelcomeModal()">Add store</a>
-            </div>
-        </div>
-    </div>
-
     <header class="main-header">
         <div class="header-container">
             <div class="logo">
@@ -56,8 +14,8 @@
             </div>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="index.html" class="active">Analytics</a></li>
-                    <li><a href="shops.html">Shops</a></li>
+                    <li><a href="index.html">Analytics</a></li>
+                    <li><a href="shops.html" class="active">Shops</a></li>
                     <li><a href="card-editor.html">Card Editor<span class="new-badge">new</span></a></li>
                 </ul>
             </nav>
@@ -137,85 +95,59 @@
     </div>
 
     <main class="main-content">
-        <div class="content-container analytics-layout">
-            <div class="content-text">
-                <h1>Add a store,<br>to use all Seller features</h1>
-                <p>Manage prices, inventory and advertising,<br>analyze sales and set up auto-replies to reviews</p>
-                <a href="#" class="yellow-btn">Add store</a>
+        <div class="content-container shops-layout">
+            <div class="back-link">
+                <a href="shops.html">← Назад</a>
             </div>
-            <div class="content-image">
-                <div class="dashboard-preview">
-                    <div class="graph-container">
-                        <div class="graph-header">
-                            <span class="graph-title">Analytics</span>
-                            <div class="graph-stats">
-                                <div class="stat-item">
-                                    <span class="stat-value">121,656 ₽</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="graph">
-                            <!-- Blue bars for graph -->
-                            <div class="bar-container">
-                                <div class="bar"></div>
-                                <div class="bar"></div>
-                                <div class="bar"></div>
-                                <div class="bar"></div>
-                                <div class="bar"></div>
-                                <div class="bar"></div>
-                                <div class="bar"></div>
-                                <div class="bar"></div>
-                            </div>
-                        </div>
-                        <div class="dashboard-footer">
-                            <div class="metrics">
-                                <div class="metric">
-                                    <span>90,000 ₽</span>
-                                </div>
-                                <div class="metric">
-                                    <span>-12,000 ₽</span>
-                                </div>
-                                <div class="metric">
-                                    <span>-19,500 ₽</span>
-                                </div>
-                                <div class="metric">
-                                    <span>99,000 ₽</span>
-                                </div>
-                            </div>
-                        </div>
+            <h1 class="page-title">Новый магазин</h1>
+            
+            <h2 class="section-title">Маркетплейс</h2>
+            <div class="marketplace-selector">
+                <div class="marketplace-option selected">
+                    <img src="https://placehold.co/40x40" alt="Wildberries" class="marketplace-icon">
+                    <span class="marketplace-name">Wildberries</span>
+                    <div class="marketplace-radio"></div>
+                </div>
+                <div class="marketplace-option">
+                    <img src="https://placehold.co/40x40" alt="Ozon" class="marketplace-icon">
+                    <span class="marketplace-name">Ozon</span>
+                    <div class="marketplace-radio"></div>
+                </div>
+            </div>
+
+            <h2 class="section-title">Токен</h2>
+            <div class="token-section">
+                <div class="token-input-wrapper">
+                    <input type="text" class="token-input" placeholder="Например, a3bjZ4hsf...j24K">
+                    <button class="help-icon">?</button>
+                </div>
+                
+                <div class="token-instructions">
+                    <div class="instruction-item">
+                        <span class="bullet">•</span>
+                        <span>Создайте токен в <a href="#" class="link">личном кабинете</a> «WB Партнеры»</span>
                     </div>
-                    <div class="dashboard-icons">
-                        <div class="icon-bag">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M4 7V19C4 20.1046 4.89543 21 6 21H18C19.1046 21 20 20.1046 20 19V7" stroke="#4285f4" stroke-width="2"/>
-                                <path d="M16 11C16 13.2091 14.2091 15 12 15C9.79086 15 8 13.2091 8 11" stroke="#4285f4" stroke-width="2"/>
-                                <path d="M9 7L9 6C9 4.34315 10.3431 3 12 3V3C13.6569 3 15 4.34315 15 6L15 7" stroke="#4285f4" stroke-width="2"/>
-                            </svg>
-                        </div>
-                        <div class="icon-social">W</div>
+                    <div class="instruction-item">
+                        <span class="bullet">•</span>
+                        <span>Не ставьте галочки «Только на чтение» и «Тестовый контур»</span>
                     </div>
+                    <div class="instruction-item">
+                        <span class="bullet">•</span>
+                        <span>Выберите все категории API или из настройке</span>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button class="yellow-btn">Добавить</button>
+                    <p class="terms-text">
+                        Нажимая «Добавить», вы соглашаетесь с условиями <a href="#" class="link">оферты и акции</a>
+                    </p>
                 </div>
             </div>
         </div>
     </main>
 
     <script>
-        // Show welcome modal on page load
-        window.onload = function() {
-            document.getElementById('welcomeModal').style.display = 'flex';
-        }
-
-        function closeWelcomeModal() {
-            document.getElementById('welcomeModal').style.display = 'none';
-        }
-
-        // Close modal when clicking outside
-        document.getElementById('welcomeModal').addEventListener('click', function(event) {
-            if (event.target === this) {
-                closeWelcomeModal();
-            }
-        });
-
         function toggleModal(button) {
             const modal = document.getElementById('stepsModal');
             if (modal.style.display === 'block') {
@@ -245,6 +177,16 @@
             if (!modal.contains(event.target) && !button.contains(event.target)) {
                 closeModal();
             }
+        });
+
+        // Marketplace selection
+        document.querySelectorAll('.marketplace-option').forEach(option => {
+            option.addEventListener('click', function() {
+                document.querySelectorAll('.marketplace-option').forEach(opt => {
+                    opt.classList.remove('selected');
+                });
+                this.classList.add('selected');
+            });
         });
     </script>
 </body>
