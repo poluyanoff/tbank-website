@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Bank Style Header</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Welcome Modal -->
+    <div id="welcomeModal" class="modal welcome-modal">
+        <div class="modal-content welcome-content">
+            <div class="welcome-left">
+                <h2>All features free<br>for 3 days</h2>
+                <div class="welcome-image">
+                    <img src="https://placehold.co/400x300" alt="Laptop with cursor" class="laptop-image">
+                </div>
+            </div>
+            <div class="welcome-right">
+                <h3>We recommend starting here<br>to make sure you get everything done</h3>
+                <div class="steps-list numbered">
+                    <div class="step-item">
+                        <span class="step-number">1</span>
+                        <div class="step-text">
+                            <h4>Add store</h4>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-number">2</span>
+                        <div class="step-text">
+                            <h4>Add competitor's product</h4>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-number">3</span>
+                        <div class="step-text">
+                            <h4>Set up auto-replies to reviews</h4>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-number">4</span>
+                        <div class="step-text">
+                            <h4>Learn unit economics</h4>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="yellow-btn" onclick="closeWelcomeModal()">Add store</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="/">T-Bank</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Personal</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Premium</a></li>
+                    <li><a href="#">More</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="login-btn">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="notification-bar">
+        <div class="notification-container">
+            <div class="notification-content">
+                <span class="gift-icon">🎁</span>
+                <span class="notification-text">Trial period ends in 2 days. </span>
+                <a href="#" class="notification-link">Connect paid plan</a>
+            </div>
+            <div style="position: relative;">
+                <button class="steps-button" onclick="toggleModal(this)">First steps in Seller</button>
+                <div id="stepsModal" class="modal">
+                    <div class="modal-content">
+                        <div class="progress-header">
+                            <div class="donut-progress">
+                                <svg width="48" height="48" viewBox="0 0 48 48">
+                                    <circle cx="24" cy="24" r="20" fill="none" stroke="#E5E7EB" stroke-width="3"/>
+                                    <circle cx="24" cy="24" r="20" fill="none" stroke="#4285f4" stroke-width="3" 
+                                            stroke-dasharray="41.89 125.66" class="progress-ring"/>
+                                </svg>
+                                <span class="progress-text">33%</span>
+                            </div>
+                            <h2>Try all features</h2>
+                        </div>
+                        <div class="steps-list">
+                            <div class="step-item completed">
+                                <span class="step-icon">🏪</span>
+                                <div class="step-text">
+                                    <h3>Add store</h3>
+                                    <p>Use all Seller features</p>
+                                </div>
+                                <svg class="check-icon" width="20" height="20" viewBox="0 0 20 20">
+                                    <circle cx="10" cy="10" r="9" fill="#34C759"/>
+                                    <path d="M6 10L9 13L14 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                </svg>
+                            </div>
+                            <div class="step-item">
+                                <span class="step-icon">👕</span>
+                                <div class="step-text">
+                                    <h3>Add competitor's product</h3>
+                                    <p>Monitor their prices, stock, turnover and sales</p>
+                                </div>
+                                <svg class="check-icon" width="20" height="20" viewBox="0 0 20 20">
+                                    <circle cx="10" cy="10" r="9" fill="#E5E7EB"/>
+                                    <path d="M6 10L9 13L14 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                </svg>
+                            </div>
+                            <div class="step-item">
+                                <span class="step-icon">💬</span>
+                                <div class="step-text">
+                                    <h3>Set up auto-replies</h3>
+                                    <p>Save up to 16 hours per month</p>
+                                </div>
+                                <svg class="check-icon" width="20" height="20" viewBox="0 0 20 20">
+                                    <circle cx="10" cy="10" r="9" fill="#E5E7EB"/>
+                                    <path d="M6 10L9 13L14 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <div class="content-container">
+            <div class="content-text">
+                <h1>Add a store,<br>to use all Seller features</h1>
+                <p>Manage prices, inventory and advertising,<br>analyze sales and set up auto-replies to reviews</p>
+                <a href="#" class="yellow-btn">Add store</a>
+            </div>
+            <div class="content-image">
+                <div class="dashboard-preview">
+                    <div class="graph-container">
+                        <div class="graph-header">
+                            <span class="graph-title">Analytics</span>
+                            <div class="graph-stats">
+                                <div class="stat-item">
+                                    <span class="stat-value">121,656 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="graph">
+                            <!-- Blue bars for graph -->
+                            <div class="bar-container">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                        <div class="dashboard-footer">
+                            <div class="metrics">
+                                <div class="metric">
+                                    <span>90,000 ₽</span>
+                                </div>
+                                <div class="metric">
+                                    <span>-12,000 ₽</span>
+                                </div>
+                                <div class="metric">
+                                    <span>-19,500 ₽</span>
+                                </div>
+                                <div class="metric">
+                                    <span>99,000 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-icons">
+                        <div class="icon-bag">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M4 7V19C4 20.1046 4.89543 21 6 21H18C19.1046 21 20 20.1046 20 19V7" stroke="#4285f4" stroke-width="2"/>
+                                <path d="M16 11C16 13.2091 14.2091 15 12 15C9.79086 15 8 13.2091 8 11" stroke="#4285f4" stroke-width="2"/>
+                                <path d="M9 7L9 6C9 4.34315 10.3431 3 12 3V3C13.6569 3 15 4.34315 15 6L15 7" stroke="#4285f4" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="icon-social">W</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Show welcome modal on page load
+        window.onload = function() {
+            document.getElementById('welcomeModal').style.display = 'flex';
+        }
+
+        function closeWelcomeModal() {
+            document.getElementById('welcomeModal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('welcomeModal').addEventListener('click', function(event) {
+            if (event.target === this) {
+                closeWelcomeModal();
+            }
+        });
+
+        function toggleModal(button) {
+            const modal = document.getElementById('stepsModal');
+            if (modal.style.display === 'block') {
+                closeModal();
+            } else {
+                openModal();
+            }
+        }
+
+        function openModal() {
+            const modal = document.getElementById('stepsModal');
+            modal.style.display = 'block';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('stepsModal');
+            modal.style.display = 'none';
+        }
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(event) {
+            const modal = document.getElementById('stepsModal');
+            const button = document.querySelector('.steps-button');
+            if (!modal.contains(event.target) && !button.contains(event.target)) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html> 
